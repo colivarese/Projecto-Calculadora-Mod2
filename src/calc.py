@@ -59,3 +59,9 @@ def suma(sumando_a, sumando_b):
     sumando_a, sumando_b = estandarizar_numeros(sumando_a, sumando_b)
     resultado = sumando_a + sumando_b
     return resultado
+
+
+def fraccion_a_flotante(fraccion):
+  num = float(fraccion.split('/')[0])
+  den = float(fraccion.split('/')[-1])
+  return num/den
