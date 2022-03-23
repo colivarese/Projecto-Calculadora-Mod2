@@ -27,3 +27,23 @@ def estandarizar_numeros(sumando_a, sumando_b):
       sumando_b = fracc
 
   return sumando_a, sumando_b
+
+
+def suma(sumando_a, sumando_b):
+  """
+  Realiza la suma de dos números.
+
+  Parameters:
+    sumando_a - Primer valor a sumar
+    sumando_b - Segundo valor a sumar
+
+  Returns:
+    El agregado de dos números
+
+  >>>suma(2, "4/6")
+    2.666...7
+  """
+  sumando_a, sumando_b = estandarizar_numeros(sumando_a,sumando_b)
+  resultado = sumando_a + sumando_b
+  
+  return resultado
