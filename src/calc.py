@@ -27,3 +27,23 @@ def estandarizar_numeros(sumando_a, sumando_b):
       sumando_b = fracc
 
   return sumando_a, sumando_b
+
+
+def multiplicacion(multiplo_a, multiplo_b):
+  """
+  Realiza la multiplicación de dos números.
+
+  Parameters:
+    multiplo_a - Primer valor a multiplicar
+    multiplo_b - Segundo valor a multiplicar
+
+  Returns:
+    El producto de dos números
+
+  >>>multiplicacion(2, "4/6")
+    1.333...
+  """
+  multiplo_a, multiplo_b = estandarizar_numeros(multiplo_a, multiplo_b)
+  resultado = multiplo_a * multiplo_b
+  return multiplo_a * multiplo_b
+
